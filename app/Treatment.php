@@ -13,7 +13,7 @@ class Treatment extends Model
     /* ----- Relation One to Many whith Users table ----- */
     public function treatmentUser()
     {
-        return $this->belongsTo('App\Utilisateur');
+        return $this->belongsTo('App\User');
     }
 
     /**

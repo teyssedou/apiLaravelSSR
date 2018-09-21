@@ -13,7 +13,7 @@ class Calendar extends Model
     /* ----- Relation One to Many whith Users table ----- */
     public function calendarUser()
     {
-        return $this->belongsTo('App\Utilisateur');
+        return $this->belongsTo('App\User');
     }
 
     /**

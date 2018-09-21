@@ -1,0 +1,14 @@
+{
+    "treatments": [{
+        "date_treatment": "2018-03-30",
+        "position": "jambe gauche",
+        "dosage": "0.4"
+    }],
+
+    "calendars": [{
+        "date_calendar": "2018-09-12 09:37:49",
+        "location": "Bayonne",
+        "person": "Dr Freud",
+        "comment": "RDV avec carnet de santé"
+    }]
+}

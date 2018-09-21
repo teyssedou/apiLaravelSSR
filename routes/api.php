@@ -18,6 +18,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 /* ----- Route Api Rest ----- */
-Route::post('/save', 'ApiController@save');
 Route::get('/view', 'ApiController@view');
-Route::delete('delete/{userId}', 'ApiController@delete');
+
+Route::post('/save/user/{userId}', 'ApiController@saveUser');
+Route::post('/save/calendar/{userIdCalendar}', 'ApiController@saveCalendar');
+Route::post('/save/treatment/{userIdTreatment}', 'ApiController@saveTreatment');
+
+Route::delete('delete/user/{userId}', 'ApiController@deleteUser');
+Route::delete('delete/calendar/{calendarId}', 'ApiController@deleteCalendar');
+Route::delete('delete/treatment/{treatmentId}', 'ApiController@deleteTreatment');
